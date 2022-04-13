@@ -1,0 +1,25 @@
+#13/04/2022
+- Configuração inicial da impressora via Marlin firmware
+    - Temperatura dummy no TEM_SENSOR_0
+    - Alteração da DUMMY_THERMISTOR_999_VALUE de 100 para 190
+    - Mecânica COREXZ
+    - Fins de curso não alterados (utiliza x,y e z)
+    - Drivers X, Y, Z, E0 para A4988
+    - movement -> #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 5039.37, 500 }
+    - zprobe -> PROBE_ANUALLY ativado
+    - bed levelling -> #define AUTO_BED_LEVELING_LINEAR
+    - lcd -> #define LCD_LANGUAGE pt_br
+    - #define DISPLAY_CHARSET_HD44780 WESTERN
+    - #define SDSUPPORT
+    - #define SPEAKER
+    - #define REPRAP_DISCOUNT_SMART_CONTROLLER
+- Investigação dos motores (Exceto do extrusor)
+    - Configuração de montagem da impressora: CoreXZ
+    - Motores de 200 passos (1,8º), 20 dentes, micropassos 1/32
+    - Motores eixo X e Y ok
+    - Motores eixo Z apresentando defeito ao acionar mais de 0,1mm no movimento
+    - (possível causa) Estrutura desalinhada em uma das colunas
+- (Des)montagem da impressora
+    - Extrusora/hotend desmontados
+    - Cabos dos motores identificados
+    - Cabos de alimentação da mesa e hotend identificados com fita isolante (negativo)
