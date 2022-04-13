@@ -1,4 +1,4 @@
-#13/04/2022
+# 13/04/2022
 - Configuração inicial da impressora via Marlin firmware
     - Temperatura dummy no TEM_SENSOR_0
     - Alteração da DUMMY_THERMISTOR_999_VALUE de 100 para 190
